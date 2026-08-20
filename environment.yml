@@ -6,4 +6,5 @@ dependencies:
   - nodejs=22
   - websockify
   - jupyter-remote-desktop-proxy
+  - jupyter-server-proxy
   - pip
