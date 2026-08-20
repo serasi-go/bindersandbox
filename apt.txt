@@ -8,3 +8,4 @@ openjdk-17-jdk
 htop
 tigervnc-standalone-server
 dbus-x11
+firefox-esr
