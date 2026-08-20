@@ -8,3 +8,4 @@ dependencies:
   - jupyter-remote-desktop-proxy
   - jupyter-server-proxy
   - pip
+  - chromium
