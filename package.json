@@ -1,0 +1,9 @@
+{
+  "name": "ubuntu-sandbox-binder",
+  "version": "1.0.0",
+  "description": "Sandbox proyek di MyBinder",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
