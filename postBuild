@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# 1. Unduh dan pasang code-server secara lokal tanpa akses root
+curl -fsSL https://code-server.dev | sh -s -- --user-limit
+
+# 2. Unduh aplikasi ttyd binary secara manual untuk terminal di browser
+mkdir -p $HOME/.local/bin
+curl -L https://github.com -o $HOME/.local/bin/ttyd
+chmod +x $HOME/.local/bin/ttyd
+
+# 3. Jalankan penginstalan paket Express dari file package.json
+npm install
