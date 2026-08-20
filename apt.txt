@@ -1,1 +1,7 @@
-
+xfce4
+xfce4-terminal
+thunar
+x11vnc
+xvfb
+openjdk-17-jdk
+htop
