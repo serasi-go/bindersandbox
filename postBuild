@@ -11,14 +11,6 @@ curl -fsSL https://code-server.dev | sh -s -- --user-limit
 curl -L https://github.com -o $HOME/.local/bin/ttyd
 chmod +x $HOME/.local/bin/ttyd
 
-# 4. Unduh Chromium portabel resmi untuk Linux Ubuntu secara otomatis
-echo "Mengunduh Chromium portabel..."
-mkdir -p $HOME/chromium
-curl -L "https://appspot.com" -o $HOME/chromium/chromium-linux.zip
-unzip -q $HOME/chromium/chromium-linux.zip -d $HOME/chromium/
-rm $HOME/chromium/chromium-linux.zip
-ln -sf $HOME/chromium/chrome-linux/chrome $HOME/.local/bin/chromium
-
 # 4. Bersihkan sisa-sisa konfigurasi VNC lama yang terkunci di sistem
 rm -rf $HOME/.vnc
 mkdir -p $HOME/.vnc
