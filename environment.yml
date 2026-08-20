@@ -5,5 +5,5 @@ dependencies:
   - python=3.10
   - nodejs=22
   - websockify
-  - jupyter-desktop-server
+  - jupyter-remote-desktop-proxy
   - pip
