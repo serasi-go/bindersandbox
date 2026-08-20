@@ -1,11 +1,10 @@
 xfce4
 xfce4-terminal
-thunar
 curl
-sudo
+thunar
 x11vnc
 xvfb
 openjdk-17-jdk
 htop
 tigervnc-standalone-server
-
+dbus-x11
