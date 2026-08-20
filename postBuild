@@ -1,12 +1,19 @@
 #!/bin/bash
 
-# 1. Unduh dan pasang code-server secara lokal tanpa akses root
+# 1. Pastikan folder bin lokal ada dan memiliki hak akses penuh
+mkdir -p $HOME/.local/bin
+chmod -R 755 $HOME/.local
+
+# 2. Unduh dan pasang code-server secara lokal tanpa root
 curl -fsSL https://code-server.dev | sh -s -- --user-limit
 
-# 2. Unduh aplikasi ttyd binary secara manual untuk terminal di browser
-mkdir -p $HOME/.local/bin
+# 3. Unduh aplikasi ttyd binary secara manual untuk terminal di browser
 curl -L https://github.com -o $HOME/.local/bin/ttyd
 chmod +x $HOME/.local/bin/ttyd
 
-# 3. Jalankan penginstalan paket Express dari file package.json
+# 4. Bersihkan sisa-sisa konfigurasi VNC lama yang terkunci di sistem
+rm -rf $HOME/.vnc
+mkdir -p $HOME/.vnc
+
+# 5. Jalankan penginstalan paket Express untuk proyek Node.js Anda
 npm install
