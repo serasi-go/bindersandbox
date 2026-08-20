@@ -9,3 +9,4 @@ dependencies:
   - jupyter-server-proxy
   - pip
   - chromium
+  - firefox
