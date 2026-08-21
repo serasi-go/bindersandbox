@@ -9,3 +9,4 @@ htop
 tigervnc-standalone-server
 dbus-x11
 chromium
+psutil
